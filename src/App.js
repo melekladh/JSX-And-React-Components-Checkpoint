@@ -9,6 +9,8 @@ import Price from './Price';
 import Description from './Description';
 import Image from './Image';
 function App() {
+  const nom ="Malek";
+
   return (
     // <div className="App">
     //  <Name/>
@@ -27,6 +29,9 @@ function App() {
         </Card.Text>
         <Button variant="primary"><Price/></Button>
       </Card.Body>
+      <p>Hello  {  nom  ? nom : 'There'}</p>
+      {  nom  ? <img src='https://play-lh.googleusercontent.com/HGfb2ClmDEA6xydDMJRQtQ5JfQcHiOJT2PKCBlNTkgJZv6igmrHHFmz4010OCq2Q8cY'/> : 'There'}
+
     </Card>
   );
 }
